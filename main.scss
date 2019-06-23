@@ -1,0 +1,44 @@
+﻿h1 {
+	color: red;
+	font-size: 20px;
+}
+
+p {
+	color: blue;
+}
+
+.form_group {
+	margin: 0 auto;
+	background: violet;
+	min-height: 300px;
+
+	.checkbox {
+		margin: 0 auto;
+		width: 50%;
+	}
+}
+
+#exampleCheck1 {
+	visibility: hidden;
+}
+
+#exampleCheck1 + label:before {
+	font-size: 45px;
+	position: absolute;
+	top: 2px;
+	display: block;
+	width: 14px;
+	height: 14px;
+	margin-left: -20px;
+	content: '';
+	border: 2px solid #ddd;
+	border-radius: 25px;
+	background: transparent;
+}
+
+#exampleCheck1:checked + label:before {
+	background: red;
+	color: #333;
+	content: "";
+	text-align: center;
+}
